@@ -16,5 +16,15 @@ namespace Eva2do
         {
             InitializeComponent();
         }
+
+        private void pickOper_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

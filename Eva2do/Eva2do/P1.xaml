@@ -13,7 +13,16 @@
             <RadioButton Content="Tarjeta de credito / debito"></RadioButton>
             <RadioButton Content="Paypal"></RadioButton>
             <RadioButton Content="Oxxo"></RadioButton>
-            <Label Text="En Tiene los siguientes productos en su carrito: "></Label>
+            <Label Text="Ingrese un código de descuento: "></Label>
+            <Entry Placeholder="Código de descuento" ></Entry>
+            <Label Text="Seleccione su tipo de envío: "></Label>
+            <Picker x:Name="pickOper" SelectedIndexChanged="pickOper_SelectedIndexChanged"/>
+            <CheckBox IsChecked="False"></CheckBox>
+            <Label Text="Deseo continuar con el proceso de pago"></Label>
+            <ImageButton Source="borrar.png" Clicked="ImageButton_Clicked" HorizontalOptions="Center"
+             VerticalOptions="CenterAndExpand"></ImageButton>
+            <Label Text="Limpiar Datos del Formulario"></Label>
+            <Button></Button>
         </StackLayout>
                 
     </ContentPage.Content>
