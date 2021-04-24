@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Hola Mundo jajaja" ></Label>
-            <Label Text="aaaaaaaaaaaaaaaaaaaaaaaaaaa"></Label>
+            <Label Text="aaaaaaaaaaaaaaaaaaaaaaaaaaaa"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
