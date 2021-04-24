@@ -2,11 +2,31 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Eva2do.P1"
-             Title="pag1">
+             Title="Carrito">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hola Mundo jajaja" ></Label>
-            <Label Text="aaaaaaaaaaaaaaaaaaaaaaaaaaaa"></Label>
+            <Frame BackgroundColor="#ff9838" Padding="24" CornerRadius="0">
+                <Label Text="Carrito"></Label>
+            </Frame>
+            <Label Text="Tiene los siguientes productos en su carrito: " FontSize="24"></Label>
+            <Label Text="Ingrese su método de pago: "></Label>
+            <RadioButton Value="Tarjeta de crédito / débito">
+                <RadioButton.Content>
+                    <Image Source=""></Image>
+                </RadioButton.Content>
+            </RadioButton>
+            <RadioButton Value="Paypal">
+                <RadioButton.Content>
+                    <Image Source=""></Image>
+                </RadioButton.Content>
+            </RadioButton>
+            <RadioButton Value="Oxxo">
+                <RadioButton.Content>
+                    <Image Source=""></Image>
+                </RadioButton.Content>
+            </RadioButton>
+            <Label Text="En Tiene los siguientes productos en su carrito: "></Label>
         </StackLayout>
+                
     </ContentPage.Content>
 </ContentPage>
