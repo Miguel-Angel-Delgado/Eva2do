@@ -10,21 +10,9 @@
             </Frame>
             <Label Text="Tiene los siguientes productos en su carrito: " FontSize="24"></Label>
             <Label Text="Ingrese su método de pago: "></Label>
-            <RadioButton Value="Tarjeta de crédito / débito">
-                <RadioButton.Content>
-                    <Image Source=""></Image>
-                </RadioButton.Content>
-            </RadioButton>
-            <RadioButton Value="Paypal">
-                <RadioButton.Content>
-                    <Image Source=""></Image>
-                </RadioButton.Content>
-            </RadioButton>
-            <RadioButton Value="Oxxo">
-                <RadioButton.Content>
-                    <Image Source=""></Image>
-                </RadioButton.Content>
-            </RadioButton>
+            <RadioButton Content="Tarjeta de credito / debito"></RadioButton>
+            <RadioButton Content="Paypal"></RadioButton>
+            <RadioButton Content="Oxxo"></RadioButton>
             <Label Text="En Tiene los siguientes productos en su carrito: "></Label>
         </StackLayout>
                 
