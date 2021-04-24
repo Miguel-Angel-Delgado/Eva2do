@@ -2,13 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Eva2do.P1"
-             Title="Carrito">
+             Title="Productos">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#ff9838" Padding="24" CornerRadius="0">
-                <Label Text="Carrito"></Label>
-            </Frame>
-            <Label Text="Tiene los siguientes productos en su carrito: " FontSize="24"></Label>
             <Label Text="Ingrese su método de pago: "></Label>
             <RadioButton Content="Tarjeta de credito / debito"></RadioButton>
             <RadioButton Content="Paypal"></RadioButton>
@@ -19,8 +15,8 @@
             <Picker x:Name="pickOper" SelectedIndexChanged="pickOper_SelectedIndexChanged"/>
             <CheckBox IsChecked="False"></CheckBox>
             <Label Text="Deseo continuar con el proceso de pago"></Label>
-            <ImageButton Source="borrar.png" Clicked="ImageButton_Clicked" HorizontalOptions="Center"
-             VerticalOptions="CenterAndExpand"></ImageButton>
+            <Button Image="borrar.png" Clicked="Button_Clicked" HorizontalOptions="Center"
+             VerticalOptions="CenterAndExpand"></Button>
             <Label Text="Limpiar Datos del Formulario"></Label>
             <Button></Button>
         </StackLayout>

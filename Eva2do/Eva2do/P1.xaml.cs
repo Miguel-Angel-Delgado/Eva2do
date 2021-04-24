@@ -22,7 +22,7 @@ namespace Eva2do
 
         }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
 
         }
