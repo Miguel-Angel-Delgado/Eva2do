@@ -5,9 +5,7 @@
              Title="pag1">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Hola Mundo jajaja" ></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
