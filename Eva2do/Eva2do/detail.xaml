@@ -5,7 +5,7 @@
              Title="Inicio">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="hola pa"
+            <Label Text="hola miguel"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
