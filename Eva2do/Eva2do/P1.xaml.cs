@@ -19,6 +19,9 @@ namespace Eva2do
             pickOper.Items.Add("Envío Express");
             pickAud.Items.Add("Bose Quite Comfort II");
             pickAud.Items.Add("PowerBeats 2 Pro by Dr.Dre");
+            pickAud.Items.Add("Beyerdinamic 770 Pro");
+            pickAud.Items.Add("Skullcandy Crusher");
+            pickAud.Items.Add("Shure 440 HF");
 
         }
 
@@ -44,11 +47,20 @@ namespace Eva2do
             double prf = subt + envt;
             double desccc = 0.90;
             double prfsi = prf * desccc;
+            double calciva = prf * 0.16;
+            double calcivadesc = prfsi * 0.16;
+            double totalsin = calciva + prf;
+            double totalsi = calcivadesc + prfsi;
             if (desc == "DESC10")
             {
                 final.Text = prfsi + "";
+                ivaf.Text = calcivadesc + "";
+                finalahorasi.Text = totalsi + "";
             }
-            else { final.Text = prf + ""; }
+            else { final.Text = prf + "";
+                ivaf.Text = calciva + "";
+                finalahorasi.Text = totalsin + "";
+            }
             
         }
 
@@ -59,11 +71,47 @@ namespace Eva2do
             if (au == "Bose Quite Comfort II")
             {
                 pr1 = 6000;
-
+                bose.Source = ImageSource.FromFile("audifff.jpg");
+                beats.Source = null;
+                skull.Source = null;
+                beyerdinamic.Source = null;
+                shure.Source = null;
             }
             else if (au == "PowerBeats 2 Pro by Dr.Dre")
             {
                 pr1 = 4200;
+                beats.Source = ImageSource.FromFile("audiff2.jpg");
+                bose.Source = null;
+                skull.Source = null;
+                beyerdinamic.Source = null;
+                shure.Source = null;
+            }
+            else if (au == "Beyerdinamic 770 Pro")
+            {
+                pr1 = 8000;
+                beyerdinamic.Source = ImageSource.FromFile("beyerdinamic.jpg");
+                bose.Source = null;
+                skull.Source = null;
+                beats.Source = null;
+                shure.Source = null;
+            }
+            else if (au == "Skullcandy Crusher")
+            {
+                pr1 = 4550;
+                skull.Source = ImageSource.FromFile("skullcandy.jpg");
+                bose.Source = null;
+                beats.Source = null;
+                beyerdinamic.Source = null;
+                shure.Source = null;
+            }
+            else if (au == "Shure 440 HF")
+            {
+                pr1 = 3899;
+                shure.Source = ImageSource.FromFile("shure.jpg");
+                bose.Source = null;
+                skull.Source = null;
+                beyerdinamic.Source = null;
+                beats.Source = null;
             }
 
             sub.Text = pr1 + "";
