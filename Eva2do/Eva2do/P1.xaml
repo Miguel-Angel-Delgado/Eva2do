@@ -6,24 +6,26 @@
     <ContentPage.Content>
         <ScrollView HeightRequest="3000">
             <StackLayout>
+                
+                <Label Text="Elige el producto a cotizar:"></Label>
                 <Picker x:Name="pickAud" SelectedIndexChanged="pickAud_SelectedIndexChanged"></Picker>
-                <Label Text="Ingrese su método de pago: "></Label>
-                <RadioButton Content="Tarjeta de credito / debito"></RadioButton>
-                <RadioButton Content="Paypal"></RadioButton>
-                <RadioButton Content="Oxxo"></RadioButton>
                 <Label Text="Ingrese un código de descuento: "></Label>
                 <Entry Placeholder="Código de descuento" x:Name="code"></Entry>
 
                 <Label Text="Seleccione su tipo de envío: "></Label>
                 <Picker x:Name="pickOper" SelectedIndexChanged="pickOper_SelectedIndexChanged"/>
-                <Label Text="Deseo continuar con el proceso de pago"></Label>
-                <CheckBox IsChecked="False"></CheckBox>
-                <Button Text="Limpiar datos del formulario" Image="borrar.png" Margin="0" Padding="0"></Button>
                 <Label Text="---------" x:Name="sub"></Label>
                 <Label Text="+"></Label>
                 <Label Text="---------" x:Name="envi"></Label>
                 <Button Text="Calcular :)" Clicked="Button_Clicked"></Button>
+                <Button Text="Limpiar datos del formulario" Image="borrar.png" Clicked="Button_Clicked_1" Margin="0" Padding="0"></Button>
                 <Label Text="---------" x:Name="final"></Label>
+                <Label Text="Ingrese su método de pago: "></Label>
+                <RadioButton Content="Tarjeta de credito / debito"></RadioButton>
+                <RadioButton Content="Paypal"></RadioButton>
+                <RadioButton Content="Oxxo"></RadioButton>
+                <Label Text="Deseo continuar con el proceso de pago"></Label>
+                <CheckBox IsChecked="False" x:Name="check"></CheckBox>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

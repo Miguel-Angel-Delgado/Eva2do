@@ -38,23 +38,24 @@ namespace Eva2do
 
         public void Button_Clicked(object sender, EventArgs e)
         {
+            string desc = Convert.ToString(code.Text);
             var subt = double.Parse(sub.Text);
             var envt = double.Parse(envi.Text);
             double prf = subt + envt;
-            string desc = code.ToString();
+            double desccc = 0.90;
+            double prfsi = prf * desccc;
             if (desc == "DESC10")
             {
-                prf = prf * 0.90;
+                final.Text = prfsi + "";
             }
-            final.Text = prf + "";
+            else { final.Text = prf + ""; }
+            
         }
 
         public void pickAud_SelectedIndexChanged(object sender, EventArgs e)
         {
             String au = pickAud.SelectedItem.ToString();
             double pr1 = 0;
-            /* aqui va la insstrucción del entry de tony */
-            int cuant = 0;
             if (au == "Bose Quite Comfort II")
             {
                 pr1 = 6000;
@@ -66,6 +67,13 @@ namespace Eva2do
             }
 
             sub.Text = pr1 + "";
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+            Navigation.PushAsync(new P1());
+
         }
     }
 }
