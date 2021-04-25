@@ -2,12 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Eva2do.P2"
-             Title="pag2">
+             Title="DATOS DE IDENTIFICACION"
+             BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Numero de lista y nombres de los integrantes:" FontSize="23" TextColor="#2487F9" Margin="4"/>
+            <Label Text="10.-Miguel Angel Delgado Grande" FontSize="20" TextColor="Black" Margin="4"/>
+            <Label Text="20.-Joseph Antony Lira Cuamatzi" FontSize="20" TextColor="Black" Margin="4"/>
+            <Label Text=" 43.-Carlos Alberto Terruel Serrano" FontSize="20" TextColor="Black" Margin="4"/>
+            <Label Text="Grado y Grupo:" FontSize="23" TextColor="#2487F9" Margin="4"/>
+            <Label Text="6AMPG" FontSize="20" TextColor="Black" Margin="4"/>
+            <Label Text="Asignatura:" FontSize="23" TextColor="#2487F9" Margin="4"/>
+            <Label Text="Desarrolla aplicaciones moviles para iOS" FontSize="20" TextColor="Black" Margin="4"/>
+            <Label Text="Fecha:" FontSize="23" TextColor="#2487F9" Margin="4"/>
+            <Label Text="27 de Abril del 2021" FontSize="20" TextColor="Black" Margin="4"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

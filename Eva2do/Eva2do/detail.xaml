@@ -2,12 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Eva2do.detail"
-             Title="Inicio">
+             Title="AUDIOHUB"
+             BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="hola miguel"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <ScrollView HeightRequest="3000">
+            <StackLayout>
+            <Label Text="AUDIOHUB es una aplicacion que vende unicamente y exclusivamente audifonos de alta gama." FontSize="23" TextColor="Black" Margin="4"/>
+            <Label Text="Ya sea como lo son los Audifonos de diadema:" FontSize="20" TextColor="Black" Margin="4"/>
+            <Image Source="audifff.jpg" />
+            <Label Text="O como los audifonos in ear:" FontSize="20" TextColor="Black" Margin="4"/>
+            <Image Source="audiff2.jpg" />
+            <Label Text="Las razones por las cuales se consideran de alta gama son la comodidad para el usuario, su diseño ergonomico, su calidad de audio y de materiales." FontSize="20" TextColor="Black" Margin="4"/>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

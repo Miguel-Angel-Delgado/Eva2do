@@ -1,19 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Eva2do.master" Title="Master"
-BackgroundColor="White">
+             x:Class="Eva2do.master"
+             Title="Master" 
+             BackgroundColor="#3f72af">
+
     <ContentPage.Content>
-    <StackLayout Orientation="Vertical">
-            <Label Text="OPCIONES" FontSize="32" Padding="30,40,30,30" TextColor="Black"></Label>
+        <StackLayout Orientation="Vertical">
+            <Frame BackgroundColor="#112d4e">
+                <Label Text="OPCIONES" FontSize="42" Padding="20,10,30,10" TextColor="White"></Label>
+            </Frame>
+            <Button Text="Productos" FontSize="22" x:Name="bp1" Clicked="bp1_Clicked" Padding="30,40,30,30" BackgroundColor="#3f72af" BorderColor="#366295" BorderWidth="1" CornerRadius="1" TextColor="White"/>
 
-            <Button Text="carrito" x:Name="bp1" Clicked="bp1_Clicked" Padding="30,40,30,30" BackgroundColor="White" BorderColor="Gray" TextColor="Black"/>
+            <Button Text="Datos de identificacion" FontSize="22" x:Name="bp2" Clicked="bp2_Clicked" Padding="30,40,30,30" BackgroundColor="#3f72af" BorderColor="#366295" BorderWidth="1" CornerRadius="1" TextColor="White"/>
 
-        <Button Text="datos de identificacion" x:Name="bp2" Clicked="bp2_Clicked"/>
+            <Button Text="Su historia" FontSize="22" x:Name="bp3" Clicked="bp3_Clicked" Padding="30,40,30,30" BackgroundColor="#3f72af" BorderColor="#366295" BorderWidth="1" CornerRadius="1" TextColor="White"/>
 
-        <Button Text="la historia" x:Name="bp3" Clicked="bp3_Clicked"/>
-
-        <Button Text="minijuego" x:Name="bp4" Clicked="bp4_Clicked"/>
-    </StackLayout>
+            <Button Text="Minijuego" FontSize="22" x:Name="bp4" Clicked="bp4_Clicked" Padding="30,40,30,30" BackgroundColor="#3f72af" BorderColor="#366295" BorderWidth="1" CornerRadius="1" TextColor="White"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

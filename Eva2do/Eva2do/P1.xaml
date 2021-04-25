@@ -4,22 +4,27 @@
              x:Class="Eva2do.P1"
              Title="Productos">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Ingrese su método de pago: "></Label>
-            <RadioButton Content="Tarjeta de credito / debito"></RadioButton>
-            <RadioButton Content="Paypal"></RadioButton>
-            <RadioButton Content="Oxxo"></RadioButton>
-            <Label Text="Ingrese un código de descuento: "></Label>
-            <Entry Placeholder="Código de descuento" ></Entry>
-            <Label Text="Seleccione su tipo de envío: "></Label>
-            <Picker x:Name="pickOper" SelectedIndexChanged="pickOper_SelectedIndexChanged"/>
-            <CheckBox IsChecked="False"></CheckBox>
-            <Label Text="Deseo continuar con el proceso de pago"></Label>
-            <Button Image="borrar.png" Clicked="Button_Clicked" HorizontalOptions="Center"
-             VerticalOptions="CenterAndExpand"></Button>
-            <Label Text="Limpiar Datos del Formulario"></Label>
-            <Button></Button>
-        </StackLayout>
-                
+        <ScrollView HeightRequest="3000">
+            <StackLayout>
+                <Picker x:Name="pickAud" SelectedIndexChanged="pickAud_SelectedIndexChanged"></Picker>
+                <Label Text="Ingrese su método de pago: "></Label>
+                <RadioButton Content="Tarjeta de credito / debito"></RadioButton>
+                <RadioButton Content="Paypal"></RadioButton>
+                <RadioButton Content="Oxxo"></RadioButton>
+                <Label Text="Ingrese un código de descuento: "></Label>
+                <Entry Placeholder="Código de descuento" x:Name="code"></Entry>
+
+                <Label Text="Seleccione su tipo de envío: "></Label>
+                <Picker x:Name="pickOper" SelectedIndexChanged="pickOper_SelectedIndexChanged"/>
+                <Label Text="Deseo continuar con el proceso de pago"></Label>
+                <CheckBox IsChecked="False"></CheckBox>
+                <Button Text="Limpiar datos del formulario" Image="borrar.png" Margin="0" Padding="0"></Button>
+                <Label Text="---------" x:Name="sub"></Label>
+                <Label Text="+"></Label>
+                <Label Text="---------" x:Name="envi"></Label>
+                <Button Text="Calcular :)" Clicked="Button_Clicked"></Button>
+                <Label Text="---------" x:Name="final"></Label>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

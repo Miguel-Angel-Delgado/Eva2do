@@ -2,12 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Eva2do.P3"
-             Title="pag3">
+             Title="LA HISTORIA"
+             BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView HeightRequest="3000">
+            <StackLayout>
+
+
+                <Label Text="Para encontrar el origen de los auriculares hay que viajar hacia 1910. Allí, un ingeniero llamado Nathaniel Baldwin creó los primeros." FontSize="20" TextColor="Black" Margin="4"/>
+                <Image Source="audiffh.jpg" />
+                <Label Text="La leyenda dice que una mañana, mientras estaba en misa, Baldwin se sentó muy lejos del cura y no pudo escuchar su discurso. Entonces diseñó un objeto para amplificar el sonido de la voz." FontSize="20" TextColor="Black" Margin="4"/>
+
+                <Label Text="El invento se veía más o menos así y fue un éxito. Fueron los alemanes los que percibieron el potencial de esta herramienta." FontSize="20" TextColor="Black" Margin="4"/>
+
+                <Label Text="En 1958, un músico y un ingeniero se aliaron para crear los primeros audífonos incluidos en un fonógrafo. El dispositivo, de la marca Kross, llamó la atención del mundo entero cuando personalidades de la música mundial como Tony Bennet aparecieron con ellos." FontSize="20" TextColor="Black" Margin="4"/>
+
+                <Label Text="Pero fue el walkman en 1979 el que verdaderamente terminó de expandir el uso doméstico y portátil de los auriculares. Era livianos y compatibles con varios modelos." FontSize="20" TextColor="Black" Margin="4"/>
+                <Image Source="audiffh2.jpg" />
+                <Label Text="Diez años después, inspirados en los equipos de aviación, aparecieron los primeros dispositivos con cancelación de ruidos." FontSize="20" TextColor="Black" Margin="4"/>
+
+                <Label Text="El 2001 fue otro año clave para el desarrollo de estos accesorios. Surgió el iPod y Apple diseñó sus característicos auriculares blancos que se volvieron un símbolo dentro de la industria." FontSize="20" TextColor="Black" Margin="4"/>
+                <Image Source="audiffh3.jpg" />
+                <Label Text="En 2008 la cultura del rap y del hip hop puso de moda una vez más los auriculares grandes como los que usan los dj." FontSize="20" TextColor="Black" Margin="4"/>
+                <Image Source="audiffh4.jpg" />
+                <Label Text="Pero como las tendencias van para atrás y para adelante también en tecnología, los aparatos grandes dieron paso a los inalámbricos livianos que tienen un aspecto futurístico.
+
+" FontSize="20" TextColor="Black" Margin="4"/>
+
+                <Label Text="De esta manera, un clásico de la tecnología se sigue reinventando." FontSize="20" TextColor="Black" Margin="4"/>
+
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

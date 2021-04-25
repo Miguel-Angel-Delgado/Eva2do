@@ -83,7 +83,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Eva2do\Eva2do.csproj">
       <Project>{C360621E-383E-4A6F-B067-D76AF2F02047}</Project>
@@ -92,6 +91,27 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\tarjeta_credito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\audiff2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\audifff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\audiffh4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\audiffh3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\audiffh2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\audiffh.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
