@@ -2,43 +2,45 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Eva2do.P1"
-             Title="Productos">
+             Title="Productos"
+             BackgroundColor="#3f72af">
     <ContentPage.Content>
-        <ScrollView HeightRequest="3000">
-            <StackLayout BackgroundColor="#CCCCCC">
+        <ScrollView HeightRequest="4000">
+            <StackLayout >
 
-                <Label Text="Elige el producto a cotizar:" FontSize="20" TextColor ="#000000"></Label>
-                <Picker x:Name="pickAud" SelectedIndexChanged="pickAud_SelectedIndexChanged"></Picker>
+                <Label Text="Elige el producto a cotizar:" FontSize="20" TextColor ="White"></Label>
+                <Picker x:Name="pickAud" SelectedIndexChanged="pickAud_SelectedIndexChanged" BackgroundColor="#3f72af"></Picker>
                 <Image x:Name="bose"></Image>
                 <Image x:Name="beats"></Image>
                 <Image x:Name="beyerdinamic"></Image>
                 <Image x:Name="skull"></Image>
                 <Image x:Name="shure"></Image>
-                <Label Text="Ingrese un código de descuento: " FontSize="20" TextColor ="#000000"></Label>
-                <Entry Placeholder="Código de descuento" x:Name="code"></Entry>
+                <Label Text="Ingrese un código de descuento: " FontSize="20" TextColor ="White"></Label>
+                <Entry Placeholder="Código de descuento" x:Name="code" BackgroundColor="#3f72af"></Entry>
 
-                <Label Text="Seleccione su tipo de envío: " FontSize="20" TextColor ="#000000"></Label>
-                <Picker x:Name="pickOper" SelectedIndexChanged="pickOper_SelectedIndexChanged"/>
-                <Label Text="Precio: " FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="---------" x:Name="sub" FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="+" FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="Envío: " FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="---------" x:Name="envi" FontSize="20" TextColor ="#000000"></Label>
-                <Button Text="Calcular :)" Clicked="Button_Clicked" BackgroundColor="#FF6600"></Button>
-                <Button Text="Limpiar datos del formulario" Image="borrar.png" Clicked="Button_Clicked_1" Margin="0" Padding="0"></Button>
-                <Label Text="Subtotal: " FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="---------" x:Name="final" FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="+" FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="IVA: " FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="---------" x:Name="ivaf" FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="Total: " FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="---------" x:Name="finalahorasi" FontSize="20" TextColor ="#000000"></Label>
-                <Label Text="Ingrese su método de pago: " FontSize="20" TextColor ="#000000"></Label>
-                <RadioButton Content="Tarjeta de credito / debito"></RadioButton>
-                <RadioButton Content="Paypal"></RadioButton>
-                <RadioButton Content="Oxxo"></RadioButton>
-                <Label Text="Deseo continuar con el proceso de pago" FontSize="20" TextColor ="#000000"></Label>
-                <CheckBox IsChecked="False" x:Name="check"></CheckBox>
+                <Label Text="Seleccione su tipo de envío: " FontSize="20" TextColor ="White"></Label>
+                <Picker x:Name="pickOper"  SelectedIndexChanged="pickOper_SelectedIndexChanged"/>
+                <Label Text="Precio: " FontSize="20" TextColor ="White"></Label>
+                <Label Text="---------" x:Name="sub" FontSize="20" TextColor ="White"></Label>
+                <Label Text="+" FontSize="20" TextColor ="White"></Label>
+                <Label Text="Envío: " FontSize="20" TextColor ="White"></Label>
+                <Label Text="---------" x:Name="envi" FontSize="20" TextColor ="White"></Label>
+                <Button x:Name="calcu" Text="Calcular" IsEnabled="False" Clicked="Button_Clicked" Padding="30,40,30,30" BackgroundColor="#3f72af" BorderColor="#366295" BorderWidth="1" CornerRadius="1" TextColor="White" FontSize="20"></Button>
+                <Button Text="Limpiar datos del formulario" Clicked="Button_Clicked_1" Padding="30,40,30,30" BackgroundColor="Purple" BorderColor="#366295" BorderWidth="1" CornerRadius="1" TextColor="White" FontSize="20"></Button>
+                <Label Text="Subtotal: " FontSize="20" TextColor ="White"></Label>
+                <Label Text="---------" x:Name="final" FontSize="20" TextColor ="White"></Label>
+                <Label Text="+" FontSize="20" TextColor ="White"></Label>
+                <Label Text="IVA: " FontSize="20" TextColor ="White"></Label>
+                <Label Text="---------" x:Name="ivaf" FontSize="20" TextColor ="White"></Label>
+                <Label Text="Total: " FontSize="20" TextColor ="White"></Label>
+                <Label Text="---------" x:Name="finalahorasi" FontSize="40" TextColor ="White"></Label>
+                <Label Text="Ingrese su método de pago: " FontSize="20" TextColor ="White"></Label>
+                <RadioButton IsEnabled="False" x:Name="check1" Content="Tarjeta de credito / debito"></RadioButton>
+                <RadioButton IsEnabled="False" x:Name="check2" Content="Paypal"></RadioButton>
+                <RadioButton IsEnabled="False" x:Name="check3"  Content="Oxxo"></RadioButton>
+                <Label Text="Deseo continuar con el proceso de pago" FontSize="20" TextColor ="White"></Label>
+                <CheckBox IsEnabled="False" IsChecked="False" x:Name="check" CheckedChanged="check_CheckedChanged" ></CheckBox>
+                <Button Text="Aceptar" x:Name="acp" IsEnabled="False" Clicked="acp_Clicked" Padding="30,40,30,30" BackgroundColor="#3f72af" BorderColor="#366295" BorderWidth="1" CornerRadius="1" TextColor="White" FontSize="20"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

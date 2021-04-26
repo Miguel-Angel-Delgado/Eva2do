@@ -27,12 +27,14 @@ namespace Eva2do
 
         public void pickOper_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             double preEnv = 0;
             String env = pickOper.SelectedItem.ToString();
             if (env == "Envío Gratis")
             {
                 preEnv = 0;
-            } else
+            }
+            else
             {
                 preEnv = 200;
             }
@@ -41,6 +43,10 @@ namespace Eva2do
 
         public void Button_Clicked(object sender, EventArgs e)
         {
+            check.IsEnabled = true;
+            check1.IsEnabled = true;
+            check2.IsEnabled = true;
+            check3.IsEnabled = true;
             string desc = Convert.ToString(code.Text);
             var subt = double.Parse(sub.Text);
             var envt = double.Parse(envi.Text);
@@ -57,21 +63,25 @@ namespace Eva2do
                 ivaf.Text = calcivadesc + "";
                 finalahorasi.Text = totalsi + "";
             }
-            else { final.Text = prf + "";
+            else
+            {
+                final.Text = prf + "";
                 ivaf.Text = calciva + "";
                 finalahorasi.Text = totalsin + "";
             }
-            
+
         }
 
         public void pickAud_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            calcu.IsEnabled = true;
             String au = pickAud.SelectedItem.ToString();
             double pr1 = 0;
             if (au == "Bose Quite Comfort II")
             {
                 pr1 = 6000;
-                bose.Source = ImageSource.FromFile("audifff.jpg");
+                bose.Source = ImageSource.FromFile("audiff.jpg");
                 beats.Source = null;
                 skull.Source = null;
                 beyerdinamic.Source = null;
@@ -122,6 +132,21 @@ namespace Eva2do
             Navigation.PopAsync();
             Navigation.PushAsync(new P1());
 
+        }
+
+        private void check_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+
+            acp.IsEnabled = true;
+
+        }
+
+        private async void acp_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("informacion", "se realizo su compra", "ok");
+            Navigation.PopAsync();
+            App.MasterD.IsPresented = false;
+            await App.MasterD.Detail.Navigation.PushAsync(new P1());
         }
     }
 }
